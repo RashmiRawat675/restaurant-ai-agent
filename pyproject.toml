@@ -1,0 +1,22 @@
+[project]
+name = "project-lang"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rashmi rawat", email = "rashmirawat71871@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "groq>=1.7.0",
+    "langgraph>=1.2.12",
+    "python-dotenv>=1.2.3",
+    "typing-extensions>=4.16.0",
+]
+
+[project.scripts]
+project-lang = "project_lang:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
